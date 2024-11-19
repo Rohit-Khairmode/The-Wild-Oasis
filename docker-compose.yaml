@@ -1,0 +1,10 @@
+services:
+  staff-app:
+    build: ./Staff-Facing-Wild-Oasis-App
+    ports:
+      - "5173:5173"
+
+  customer-app:
+    build: ./the-wild-oasis-website
+    ports:
+      - "3000:3000"
